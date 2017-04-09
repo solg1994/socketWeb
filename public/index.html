@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8">
+  <title> Aplicacion fantasma de Sockets </title>
+  <script src= "/socket.io/socket.io.js"></script>
+  <script src = "main.js"></script>
+</head>
+<style>
+    body{
+      background: #000;
+      background-size: cover;
+      text-align: center;
+    }
+    h1 {color:white;}
+    div {color:white;}
+</style>
+<body id = "particles-js">
+  <h1> Web Sockets: Mensajeria</h1>
+  <div id='messages'></div>
+  <br/>
+  <form onsubmit="return addMessage(this)">
+    <input type = "text" id = "username" placeholder = "User: ">
+    <input type = "text"  id = "texto" placeholder="Di una palabras...">
+    <input type = "submit" value = "Enviar">
+    <script src="particles.js"></script>
+    <script src="particulas.js"></script>
+  </form>
+</body>
+</html>
